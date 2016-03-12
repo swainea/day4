@@ -60,6 +60,9 @@
       .iconbox .cart{
         border-right: 0px;
       }
+      .iconbox .square1{
+        color: #68b0e1;
+      }
       .iconbox .square2{
         color: #e36ea5;
       }
@@ -67,7 +70,7 @@
         color: #e1ae76;
       }
       .sizingHoverbox{
-        transition: all 1s;
+        transition: all 2s;
         opacity: 0;
         position: absolute;
         bottom: 130%;
@@ -78,6 +81,7 @@
         box-sizing: border-box;
         background-color: white;
         border-radius: 7px;
+        padding-top: 15px;
       }
 
       .triangle1{
@@ -105,6 +109,7 @@
         bottom: 100%;
         left: -15%;
       }
+
       .flipBox{
         position: absolute;
         top: 0;
@@ -117,8 +122,28 @@
         text-align: center;
         padding-top: 3px;
       }
+
       .fa-repeat{
         color: #56b6ce;
+      }
+      .swatchesColorBox{
+        transition: all 2s;
+        opacity: 1;
+        position: absolute;
+        bottom: 130%;
+        left: -15%;
+        height: 85px;
+        width: 130%;
+        border: 3px solid #56b6ce;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 7px;
+        text-align: center;
+      }
+
+
+      .swatchesColorBox #blueSquare{
+        margin-left: 5px;
       }
     </style>
   </head>
@@ -155,6 +180,12 @@
                 <i class="fa fa-user fa-2x"></i>
               </li>
               <li class="square1">
+                <div class="swatchesColorBox">
+                  <ul class="colorList">
+                    <li><i id="blueSquare" class="fa fa-square fa-2x"></i><i class="fa fa-square fa-2x"></i></li>
+                    <li><i class="fa fa-square fa-2x"></i><i class="fa fa-square fa-2x"></i></li>
+                  </ul>
+                </div>
                 <i class="fa fa-square fa-2x"></i>
               </li>
               <li class="cart">
