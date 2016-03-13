@@ -23,11 +23,13 @@
         width: 30%;
         min-width: 300px;
         box-sizing: border-box;
-        border: 3px solid #56b6ce;
         margin-right: 5%;
       }
       .col.right{
         margin-right: 0%;
+      }
+      .innerdiv{
+        border: 3px solid #56b6ce;
       }
       .photoBox{
         position: relative;
@@ -41,6 +43,7 @@
         height: 100%;
       }
       .iconbox{
+        height:40px;
         border-top: 3px solid #56b6ce;
       }
       .iconList > li{
@@ -81,7 +84,7 @@
         box-sizing: border-box;
         background-color: white;
         border-radius: 7px;
-        padding-top: 15px;
+        padding-top: 7px;
       }
 
       .triangle1{
@@ -101,7 +104,7 @@
         font-size: 30px;
         padding: 4px;
         color: #56b6ce;
-        font-family: Gill Sans;
+        font-family: "Century Gothic", sans-serif;
       }
 
       .sizingList > li:hover{
@@ -186,13 +189,11 @@
         border-right: 3px solid #56b6ce;
         border-bottom: 3px solid #56b6ce;
       }
-      .bottomContainer{
-        height: 300px;
-        width:90%;
-        background-color: red;
-        position: relative;
-        top: 0%;
-        left: 0%;
+      .outerdiv{
+        margin-top: 10px;
+        color: #56b6ce;
+        font-family: "Century Gothic", sans-serif;
+        font-size: 25px;
       }
     </style>
   </head>
@@ -202,138 +203,151 @@
       <div class="container">
 
         <div class="col left">
-          <div class="photoBox">
-            <img class="tShirt" src="http://i.imgur.com/49qyTJT.png"/>
-            <div class="flipBox">
-              <i class="fa fa-repeat fa-lg"></i>
+          <div class="innerdiv">
+            <div class="photoBox">
+              <img class="tShirt" src="http://i.imgur.com/49qyTJT.png"/>
+              <div class="flipBox">
+                <i class="fa fa-repeat fa-lg"></i>
+              </div>
+            </div>
+            <div class="iconbox">
+              <ul class="iconList">
+                <li>
+                    <i class="fa fa-retweet fa-2x"></i>
+                </li>
+                <li>
+                  <i class="fa fa-heart-o fa-2x"></i>
+                </li>
+                <li class="sizingHover">
+                  <div class="sizingHoverbox">
+                    <ul class="sizingList">
+                      <li>XL</li>
+                      <li>L</li>
+                      <li>M</li>
+                      <li>S</li>
+                    </ul>
+                    <div class="triangle1"></div>
+                  </div>
+                  <i class="fa fa-user fa-2x"></i>
+                </li>
+                <li id="square1" class="squareHover">
+                  <div class="swatchesColorBox">
+                    <ul class="colorList">
+                      <li><i id="blueSquare" class="fa fa-square fa-2x swatchSquare"></i><i id="pinkSquare" class="fa fa-square fa-2x"></i></li>
+                      <li><i id="yellowSquare" class="fa fa-square fa-2x"></i><i id="greenSquare" class="fa fa-square fa-2x"></i></li>
+                    </ul>
+                    <div class="triangle2"></div>
+                  </div>
+                  <i class="fa fa-square fa-2x"></i>
+                </li>
+                <li class="cart">
+                  <i class="fa fa-shopping-cart fa-2x"></i>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="iconbox">
-            <ul class="iconList">
-              <li>
-                  <i class="fa fa-retweet fa-2x"></i>
-              </li>
-              <li>
-                <i class="fa fa-heart-o fa-2x"></i>
-              </li>
-              <li class="sizingHover">
-                <div class="sizingHoverbox">
-                  <ul class="sizingList">
-                    <li>XL</li>
-                    <li>L</li>
-                    <li>M</li>
-                    <li>S</li>
-                  </ul>
-                  <div class="triangle1"></div>
-                </div>
-                <i class="fa fa-user fa-2x"></i>
-              </li>
-              <li id="square1" class="squareHover">
-                <div class="swatchesColorBox">
-                  <ul class="colorList">
-                    <li><i id="blueSquare" class="fa fa-square fa-2x swatchSquare"></i><i id="pinkSquare" class="fa fa-square fa-2x"></i></li>
-                    <li><i id="yellowSquare" class="fa fa-square fa-2x"></i><i id="greenSquare" class="fa fa-square fa-2x"></i></li>
-                  </ul>
-                  <div class="triangle2"></div>
-                </div>
-                <i class="fa fa-square fa-2x"></i>
-              </li>
-              <li class="cart">
-                <i class="fa fa-shopping-cart fa-2x"></i>
-              </li>
-            </ul>
+          <div class="outerdiv">
+            <p>Save my trees <b>$29</b></p>
           </div>
-
         </div>
 
         <div class="col mid">
-          <div class="photoBox">
-            <img class="tShirt" src="http://i.imgur.com/YVUzCs4.png"/>
-            <div class="flipBox">
-              <i class="fa fa-repeat fa-lg"></i>
+          <div class="innerdiv">
+            <div class="photoBox">
+              <img class="tShirt" src="http://i.imgur.com/YVUzCs4.png"/>
+              <div class="flipBox">
+                <i class="fa fa-repeat fa-lg"></i>
+              </div>
+            </div>
+            <div class="iconbox">
+              <ul class="iconList">
+                <li>
+                  <i class="fa fa-retweet fa-2x"></i>
+                </li>
+                <li>
+                  <i class="fa fa-heart-o fa-2x"></i>
+                </li>
+                <li class="sizingHover">
+                  <div class="sizingHoverbox">
+                    <ul class="sizingList">
+                      <li>XL</li>
+                      <li>L</li>
+                      <li>M</li>
+                      <li>S</li>
+                    </ul>
+                    <div class="triangle1"></div>
+                  </div>
+                  <i class="fa fa-user fa-2x"></i>
+                </li>
+                <li id="square2" class="squareHover">
+                  <div class="swatchesColorBox">
+                    <ul class="colorList">
+                      <li><i id="blueSquare" class="fa fa-square fa-2x swatchSquare"></i><i id="pinkSquare" class="fa fa-square fa-2x"></i></li>
+                      <li><i id="yellowSquare" class="fa fa-square fa-2x"></i><i id="greenSquare" class="fa fa-square fa-2x"></i></li>
+                    </ul>
+                    <div class="triangle2"></div>
+                  </div>
+                  <i class="fa fa-square fa-2x"></i>
+                </li>
+                <li class="cart">
+                  <i class="fa fa-shopping-cart fa-2x"></i>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="iconbox">
-            <ul class="iconList">
-              <li>
-                <i class="fa fa-retweet fa-2x"></i>
-              </li>
-              <li>
-                <i class="fa fa-heart-o fa-2x"></i>
-              </li>
-              <li class="sizingHover">
-                <div class="sizingHoverbox">
-                  <ul class="sizingList">
-                    <li>XL</li>
-                    <li>L</li>
-                    <li>M</li>
-                    <li>S</li>
-                  </ul>
-                  <div class="triangle1"></div>
-                </div>
-                <i class="fa fa-user fa-2x"></i>
-              </li>
-              <li id="square2" class="squareHover">
-                <div class="swatchesColorBox">
-                  <ul class="colorList">
-                    <li><i id="blueSquare" class="fa fa-square fa-2x swatchSquare"></i><i id="pinkSquare" class="fa fa-square fa-2x"></i></li>
-                    <li><i id="yellowSquare" class="fa fa-square fa-2x"></i><i id="greenSquare" class="fa fa-square fa-2x"></i></li>
-                  </ul>
-                  <div class="triangle2"></div>
-                </div>
-                <i class="fa fa-square fa-2x"></i>
-              </li>
-              <li class="cart">
-                <i class="fa fa-shopping-cart fa-2x"></i>
-              </li>
-            </ul>
+          <div class="outerdiv">
+            <p>Nature Lover <b>$19</b></p>
           </div>
         </div>
 
         <div class="col right">
-          <div class="photoBox">
-            <img class="tShirt" src="http://i.imgur.com/gTUZuo5.png"/>
-            <div class="flipBox">
-              <i class="fa fa-repeat fa-lg"></i>
+          <div class="innerdiv">
+            <div class="photoBox">
+              <img class="tShirt" src="http://i.imgur.com/gTUZuo5.png"/>
+              <div class="flipBox">
+                <i class="fa fa-repeat fa-lg"></i>
+              </div>
+            </div>
+            <div class="iconbox">
+              <ul class="iconList">
+                <li>
+                  <i class="fa fa-retweet fa-2x"></i>
+                </li>
+                <li>
+                  <i class="fa fa-heart-o fa-2x"></i>
+                </li>
+                <li class="sizingHover">
+                  <div class="sizingHoverbox">
+                    <ul class="sizingList">
+                      <li>XL</li>
+                      <li>L</li>
+                      <li>M</li>
+                      <li>S</li>
+                    </ul>
+                    <div class="triangle1"></div>
+                  </div>
+                  <i class="fa fa-user fa-2x"></i>
+                </li>
+                <li id="square3" class="squareHover">
+                  <div class="swatchesColorBox">
+                    <ul class="colorList">
+                      <li><i id="blueSquare" class="fa fa-square fa-2x swatchSquare"></i><i id="pinkSquare" class="fa fa-square fa-2x"></i></li>
+                      <li><i id="yellowSquare" class="fa fa-square fa-2x"></i><i id="greenSquare" class="fa fa-square fa-2x"></i></li>
+                    </ul>
+                    <div class="triangle2"></div>
+                  </div>
+                  <i class="fa fa-square fa-2x"></i>
+                </li>
+                <li class="cart">
+                  <i class="fa fa-shopping-cart fa-2x"></i>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="iconbox">
-            <ul class="iconList">
-              <li>
-                <i class="fa fa-retweet fa-2x"></i>
-              </li>
-              <li>
-                <i class="fa fa-heart-o fa-2x"></i>
-              </li>
-              <li class="sizingHover">
-                <div class="sizingHoverbox">
-                  <ul class="sizingList">
-                    <li>XL</li>
-                    <li>L</li>
-                    <li>M</li>
-                    <li>S</li>
-                  </ul>
-                  <div class="triangle1"></div>
-                </div>
-                <i class="fa fa-user fa-2x"></i>
-              </li>
-              <li id="square3" class="squareHover">
-                <div class="swatchesColorBox">
-                  <ul class="colorList">
-                    <li><i id="blueSquare" class="fa fa-square fa-2x swatchSquare"></i><i id="pinkSquare" class="fa fa-square fa-2x"></i></li>
-                    <li><i id="yellowSquare" class="fa fa-square fa-2x"></i><i id="greenSquare" class="fa fa-square fa-2x"></i></li>
-                  </ul>
-                  <div class="triangle2"></div>
-                </div>
-                <i class="fa fa-square fa-2x"></i>
-              </li>
-              <li class="cart">
-                <i class="fa fa-shopping-cart fa-2x"></i>
-              </li>
-            </ul>
+          <div class="outerdiv">
+            <p>Forrest Walk <b>$39</b></p>
           </div>
         </div>
-        <div class="bottomContainer"></div>
       </div>
   </body>
 </html>
